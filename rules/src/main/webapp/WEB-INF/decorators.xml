@@ -1,0 +1,23 @@
+<decorators defaultdir="/decorators">
+    <excludes>
+        <pattern>/40*.jsp</pattern>
+        <pattern>/*ajax=true*</pattern>
+        <pattern>/scripts/dojo/*</pattern>
+        <pattern>/struts/dojo/*</pattern> 
+        <pattern>/resources/*</pattern>
+        <pattern>*ajax*</pattern>
+        <pattern>*print*</pattern>
+    </excludes> 
+    <decorator name="template" page="rulelibrary.jsp">
+        <pattern>/rule/*</pattern>
+        <pattern>/result/*</pattern>
+        <pattern>/index/*</pattern>
+    </decorator>
+    <decorator name="template2" page="explainandaudit.jsp">
+        <pattern>/explain/*</pattern>
+        <pattern>/critical*</pattern>
+    </decorator>
+    <decorator name="default" page="default.jsp">
+        <pattern>/*</pattern>
+    </decorator>
+</decorators>

@@ -1,0 +1,28 @@
+<!-- NOTE: If you're working offline, you might have to change the DOCTYPE to the following:
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">-->
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+    	<mapping class="com.zju.model.User"/>
+        <mapping class="com.zju.model.Role"/>
+        <mapping class="com.zju.model.Bag"/>
+        <mapping class="com.zju.model.Rule"/>
+        <mapping class="com.zju.model.Result"/>
+        <mapping class="com.zju.model.Item"/>
+        <mapping class="com.zju.model.Index"/>
+        <mapping class="com.zju.model.IDMap"/>
+        <mapping class="com.zju.model.Library"/>
+        <mapping class="com.zju.model.PatientInfo"/>
+        <mapping class="com.zju.model.TestResult"/>
+        <mapping class="com.zju.model.TestDescribe"/>
+        <mapping class="com.zju.model.Task"/>
+        <mapping class="com.zju.model.Permission"/>
+        <mapping class="com.zju.model.ReasoningModify"/>
+        <mapping class="com.zju.model.TestModify"/>
+        <mapping class="com.zju.model.AuditTrace"/>
+        <mapping class="com.zju.model.Ylxh"/>
+    </session-factory>
+</hibernate-configuration>

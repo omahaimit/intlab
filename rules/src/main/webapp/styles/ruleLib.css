@@ -1,0 +1,157 @@
+div #navleft {
+	float: left;
+	width: 210px;
+	margin-bottom:10px;
+}
+
+td p {
+	line-height:150%;
+	padding:0px;
+	margin:0px;
+}
+
+div #contentright {
+	float: right;
+	width: 720px;
+}
+
+.ui-autocomplete-category {
+	font-weight: bold;
+	padding: .2em .4em;
+	margin: .8em 0 .2em;
+	line-height: 1.2;
+	color: #FF3030;
+}
+
+.ui-autocomplete-loading {
+	background: white url('../images/ui-anim_basic_16x16.gif') right center
+		no-repeat;
+}
+
+.ui-autocomplete li {
+	text-align: left;
+}
+
+.ui-autocomplete {
+    max-height: 180px;
+    overflow-y: auto;
+    /* prevent horizontal scrollbar */
+    overflow-x: hidden;
+}
+
+#ruleTree {
+	font-size:12px;
+}
+
+.tag-name {
+	padding-left:13px;
+	height: 34px;
+	line-height: 31px;
+	color: #666;
+	font-size: 15px;
+	-webkit-transition-property: all;
+	-webkit-transition-duration: .5s;
+	-moz-transition-property: all;
+	-moz-transition-duration: .5s;
+	-o-transition-property: all;
+	-o-transition-duration: .5s;
+	transition-property: all;
+	transition-duration: .5s
+}
+
+.tag-name {
+	color: #3EA7CB;
+	-webkit-text-shadow: 0 1px 1px #FFF;
+	-moz-text-shadow: 0 1px 1px #FFF;
+	-o-text-shadow: 0 1px 1px #FFF;
+	text-shadow: 0 1px 1px #FFF;
+	cursor: pointer
+}
+
+#navContent {
+	background-color: white;
+	border: 1px solid #E1E1E1;
+	padding: 5px 0px 10px 0px;
+	min-height:600px;
+}
+.border-radius-6, .border-radius-10, .custom-scroll-bar::-webkit-scrollbar, .custom-scroll-bar::-webkit-scrollbar-thumb, .x-message-shadow, .x-message-box .x-message-content {
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+}
+.border-shadow {
+	-webkit-box-shadow: 0 2px 2px rgba(6, 0, 1, 0.05);
+	-moz-box-shadow: 0 2px 2px rgba(6,0,1,0.05);
+	-khtml-box-shadow: 0 2px 2px rgba(6,0,1,0.05);
+	box-shadow: 0 2px 2px rgba(6, 0, 1, 0.05);
+}
+.border-radius-6 {
+	-moz-border-radius: 6px;
+	-khtml-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+}
+
+.tag-section {
+	height:31px;
+}
+.tag-item {
+	cursor: pointer;
+	height:34;
+}
+.selbtn, .selbtn:visited {
+	height: 31px;
+	width: 208px;
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    border-bottom: 1px solid #E1E1E1; 
+}
+.selbtn:hover {
+	background-color:#F1F1F1;
+	border-top: 1px solid #E1E1E1; 
+}
+
+.follow-btn {
+	color: #fff;
+	display: inline-block;
+}
+
+a.follow-btn {
+	width: 28px;
+	height: 28px;
+	cursor: pointer;
+	margin:2px;
+	overflow: hidden;
+	float: right
+}
+
+a.add, a.add:hover
+{
+	background: url('../images/follow_btn_add.png')
+		no-repeat
+}
+
+a.remove, a.remove:hover
+{
+	background: url('../images/follow_btn_remove.png')
+		no-repeat
+}
+
+
+a.add:hover {
+	background-position: 0 -28px
+}
+
+a.remove:hover {
+	background-position: 0 -28px
+}
+
+table {
+	font-size:13px;
+}
+
+*{
+	font-family:Microsoft YaHei; 
+}

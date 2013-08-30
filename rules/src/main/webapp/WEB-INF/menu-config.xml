@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MenuConfig>
+    <Displayers>
+        <Displayer name="Velocity" type="net.sf.navigator.displayer.VelocityMenuDisplayer"/>
+    </Displayers>
+    <Menus>
+        <Menu name="MainMenu" title="mainMenu.title" page="/mainMenu" roles="ROLE_ADMIN,ROLE_DOCTOR,ROLE_OPERATOR,ROLE_PATIENT,ROLE_USER"/>
+        <Menu name="AdminMenu" title="menu.admin" description="Admin Menu" roles="ROLE_ADMIN" width="80" page="/admin/users">
+            <Item name="ViewUsers" title="menu.admin.users" page="/admin/users"/>
+            <Item name="ActiveUsers" title="mainMenu.activeUsers" page="/admin/activeUsers"/>
+            <Item name="FileUpload" title="menu.selectFile" page="/fileupload"/>
+            <Item name="RuleDownload" title="menu.ruleExport" page="/admin/download"/>
+            <Item name="TaskManager" title="menu.task" page="/task"/>
+            <Item name="Permission" title="menu.permission" page="/admin/roles"/>
+            <Item name="DataAdapter" title="menu.adapter" page="/admin/adapter" />
+        </Menu>
+        <Menu name="UserMenu" width="80" title="menu.user.manage" description="User Menu" roles="ROLE_ADMIN,ROLE_DOCTOR,ROLE_OPERATOR,ROLE_PATIENT,ROLE_USER">
+        	<Item name="UserMenu" title="menu.user" page="/userform"/>
+        	<Item name="UserCustom" title="user.custom" page="/usercustom"/>
+        	<Item name="Logout" title="user.logout" page="/logout"/>
+        </Menu>
+        <Menu name="RulesManage" title="menu.rule" page="/rule/list" width="85" roles="ROLE_ADMIN,ROLE_DOCTOR,ROLE_OPERATOR,ROLE_PATIENT,ROLE_USER"/>
+        <Menu name="IntelAuditAndExplain" title="menu.explain" page="/explain/skip" width="75" roles="ROLE_DOCTOR,ROLE_OPERATOR,ROLE_PATIENT"/>
+        <Menu name="QualityManage" title="menu.quality" width="100" roles="ROLE_ADMIN,ROLE_DOCTOR,ROLE_OPERATOR,ROLE_PATIENT">
+        	<Item name="InvalidForm" title="menu.quality.form" page="/invalidSamplesform" />
+        	<Item name="InvalidList" title="menu.quality.list" page="/invalidSamples" />
+        </Menu>
+    </Menus>
+</MenuConfig>

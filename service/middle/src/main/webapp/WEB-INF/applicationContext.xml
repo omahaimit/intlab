@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"
+       default-lazy-init="true">
+
+    <!-- Activates scanning of @Autowired -->
+    <context:annotation-config/>
+
+    <!-- Activates scanning of @Repository and @Service -->
+    <context:component-scan base-package="com.zju"/>
+
+    <!-- Add new DAOs here -->
+    <bean id="patientInfoDao" class="com.zju.webapp.dao.PatientInfoDaoImpl">
+    	<property name="jdbcTemplate" ref="jdbcTemplate" />
+    </bean>
+    <bean id="testResultDao" class="com.zju.webapp.dao.TestResultDaoImpl">
+    	<property name="jdbcTemplate" ref="jdbcTemplate" />
+    </bean>
+    <bean id="patientDao" class="com.zju.webapp.dao.PatientDaoImpl">
+    	<property name="jdbcTemplate" ref="jdbcTemplate" />
+    	<property name="jdbcTemplateZ1" ref="jdbcTemplateZ1" />
+    </bean>
+
+    <!-- Add new Managers here -->
+    <bean id="patientInfoService" class="com.zju.webapp.service.PatientInfoManager">
+    	<property name="patientInfoDao" ref="patientInfoDao" />
+    </bean>
+    <bean id="testResultService" class="com.zju.webapp.service.TestResultManager">
+    	<property name="testResultDao" ref="testResultDao" />
+    </bean>
+    <!-- <bean id="patientService" class="com.zju.webapp.service.PatientManager">
+    	<property name="patientDao" ref="patientDao" />
+    </bean> -->
+    
+</beans>
